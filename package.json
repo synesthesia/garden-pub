@@ -1,0 +1,25 @@
+{
+  "name": "@synesthesia/garden-pub-3",
+  "version": "1.0.0",
+  "description": "Publish digital garden on netlify",
+  "dependencies": {
+    "@pauliescanlon/gatsby-mdx-embed": "^0.0.21",
+    "gatsby": "^2.24.2",
+    "gatsby-theme-garden": "^0.1.50",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/synesthesia/garden-pub-3.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/synesthesia/garden-pub-3/issues"
+  },
+  "homepage": "https://github.com/synesthesia/garden-pub-3#readme"
+}

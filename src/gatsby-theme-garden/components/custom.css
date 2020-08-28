@@ -1,0 +1,9 @@
+/*
+ Add any custom CSS you want here **/
+
+blockquote {
+  margin-left: 32px;
+  border-left: 4px solid #CCC;
+  padding-left: 8px;
+}
+
