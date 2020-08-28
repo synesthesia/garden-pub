@@ -1,5 +1,7 @@
 # garden-pub
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a7e4d30a-01e5-46c3-8904-94ec5ca2e386/deploy-status)](https://app.netlify.com/sites/pedantic-spence-ad5f3a/deploys)
+
 ## Overview
 
 This repository builds a GatsbyJS site to deploy a digital garden website based on [gatsby-theme-garden](https://github.com/mathieudutour/gatsby-digital-garden).
