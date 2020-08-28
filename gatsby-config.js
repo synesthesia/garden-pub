@@ -17,7 +17,8 @@ module.exports = {
           "**/.vscode/**",
           "**/netlify.toml",
           "**/*.sh",
-	        "**/.gitkeep",
+          "**/.gitkeep",
+          "**/Vagrantfile"
         ],
       },
     },
