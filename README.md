@@ -6,13 +6,15 @@ This repository builds a GatsbyJS site to deploy a digital garden website based 
 
 Content is sourced from the pages directory which is currently configured to pull in a [Foam](https://foambubble.github.io/foam/) repository of Markdown files.
 
-To use this repository with a different source repository delete the current submodule and replace with your own.
+To use this repository with a different source repository, clone this repository and delete the current submodule and replace with your own. NB because my source repository is private, unless you modify this repository will not build. 
 
 ## Build
 
 The repository is designed to build on Netlify.
 
-To give Netlify full git read access to the content submodule take the following steps:
+The build script updates the content repository by doing a `git pull origin master` - in other words you don't need to update this repository each time you update content.
+
+Netlify needs full git read access to the content submodule to do this, so take the following steps:
 
 1. using `ssh-keygen` create a new SSH public-private key pair without a passphrase.
 2. Add the public key as a deploy key on the Github repo for the content submodule
@@ -20,6 +22,33 @@ To give Netlify full git read access to the content submodule take the following
 4. In Netlify configure an environment variable called `SSH_KEY`. Paste the edited private key into this variable.
 5. The build script checks if it is running on Netlify and if so re-transforms the private key and saves it to `~/.ssh/id_rsa`.
 
+## Triggering Netlify to build on each content update
+
+1. In Netlify [create a webhook](https://docs.netlify.com/site-deploys/notifications/#incoming-webhooks) for your site
+2. Copy  the webhook URL
+3. In Github go to the **repo for your content**
+4. Add a secret called NETLIFY_HOOK_URL
+5. Paste the webhook URL into the secret
+6. In your **content repo** create a Github action:
+
+`.github/workflows/deploy-netlify.yml`
+```
+name: Trigger Netlify build
+on:
+  push:
+    branches:    
+      - master
+    
+jobs:
+  trigger-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invoke Netlify deployment hook
+        uses: distributhor/workflow-webhook@v1
+        env:
+          webhook_url: ${{secrets.NETLIFY_HOOK_URL}}?trigger_title=content_update
+          webhook_secret: "whatever"
+```
 
 ## Local development
 
@@ -54,3 +83,6 @@ vagrant@gatsby:~/site$ gatsby develop -H 0.0.0.0
 ```
 
 
+## Copyright
+
+This repository (c) Julian Elve 2020 onwards and released under the MIT licence  - see [[LICENSE]](LICENSE.md)
