@@ -12,7 +12,7 @@
   publish = "public/"
 
   # Default build command.
-  command = "build.sh"
+  command = "./build.sh"
 
   # by default Netlify ignores changes outside the root, we need to force it to build on any change
 
