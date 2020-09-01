@@ -34,13 +34,13 @@ Netlify needs full git read access to the content submodule to do this, so take 
 6. In your **content repo** create a Github action:
 
 `.github/workflows/deploy-netlify.yml`
-```
+
+```bash
 name: Trigger Netlify build
 on:
   push:
-    branches:    
+    branches:
       - master
-    
 jobs:
   trigger-publish:
     runs-on: ubuntu-latest
@@ -62,28 +62,30 @@ To get around that this repo contains a Vagrantfile to define a simple linux VM 
 
 Following assumes that VirtualBox and Vagrant are installed and working.
 
-The Vagrantfile forwards port 8000 on the guest VM to port 8000 on the host, so you can still monitor changes by pointing a browser at 
+The Vagrantfile forwards port 8000 on the guest VM to port 8000 on the host, so you can still monitor changes by pointing a browser at
 
-* http://garden.test:8000 or 
-* http://localhost:8000
-
+* [http://garden.test:8000](http://garden.test:8000) or
+* [http://localhost:8000](http://localhost:8000)
 
 On host:
 
-```
+```bash
 $> vagrant up
 $> vagrant ssh
 ```
 
 On guest VM
-```
 
+```bash
 vagrant@gatsby:~$ cd site
 vagrant@gatsby:~/site$ yarn install
 vagrant@gatsby:~/site$ gatsby develop -H 0.0.0.0
 
 ```
 
+## Acknowledgements
+
+Search via [Jonathan Ingall](https://github.com/ingalless/foam-template-gatsby-search) and  [Mathieu DuTour](https://github.com/mathieudutour/foam-template-gatsby-search)
 
 ## Copyright
 
