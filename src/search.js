@@ -56,7 +56,7 @@ export const useFlexSearch = (query, searchOptions) => {
       .then((res) => {
         setStore(res);
       });
-  }, []);
+  }, [data.localSearchPaths.publicIndexURL, data.localSearchTitles.publicIndexURL, data.localSearchBodies.publicIndexURL, data.localSearchPaths.publicStoreURL]);
 
   return useMemo(() => {
     if (!query || !store || (!pathIndex && !bodyIndex && !titleIndex))
