@@ -91,7 +91,7 @@ export const useFlexSearch = (query, searchOptions) => {
         return true;
       })
       .map((id) => store[id]);
-  }, [query, pathIndex, titleIndex, bodyIndex, store]);
+  }, [query, pathIndex, titleIndex, bodyIndex, store, searchOptions]);
 };
 
 export function Search() {
