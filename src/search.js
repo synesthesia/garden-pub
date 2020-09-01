@@ -162,7 +162,7 @@ function Results({
       <ul className="results" {...getMenuProps()}>
         {results.map((r, index) => (
           <li
-            key={r.id}
+            key={index.toString()}
             {...getItemProps({
               index,
               item: r,
