@@ -6,4 +6,8 @@ blockquote {
   border-left: 4px solid #CCC;
   padding-left: 8px;
 }
+blockquote p {
+  padding: 2px 4px;
+  padding-left: 8px;
+}
 
