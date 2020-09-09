@@ -4,20 +4,24 @@
   "description": "Publish digital garden on netlify with Gatsby",
   "dependencies": {
     "@pauliescanlon/gatsby-mdx-embed": "^0.0.21",
-    "gatsby": "^2.24.2",
-    "gatsby-theme-garden": "^0.1.50",
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1",
     "downshift": "^6.0.3",
     "flexsearch": "^0.6.32",
+    "gatsby": "^2.24.2",
     "gatsby-plugin-local-search": "^2.0.0",
-    "gatsby-plugin-manifest": "^2.4.23"
+    "gatsby-plugin-manifest": "^2.4.23",
+    "gatsby-theme-garden": "^0.1.50",
+    "imagemin-pngquant": "^9.0.0",
+    "patch-package": "^6.2.2",
+    "postinstall-postinstall": "^2.1.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "gatsby develop",
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
-    "start": "gatsby serve"
+    "start": "gatsby serve",
+    "postinstall": "patch-package"
   },
   "repository": {
     "type": "git",
