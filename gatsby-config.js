@@ -5,6 +5,20 @@ module.exports = {
   },
   plugins: [
     `@pauliescanlon/gatsby-mdx-embed`,
+     {
+       resolve: `gatsby-plugin-manifest`,
+       options: {
+         name: `Synesthesia Digital Garden`,
+         short_name: `Digital Garden`,
+         start_url: `/`,
+         background_color: `#00843D`,
+         theme_color: `#00843D`,
+         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+         display: `standalone`,
+         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+       },
+     },
     {
       resolve: `gatsby-theme-garden`,
       options: {
