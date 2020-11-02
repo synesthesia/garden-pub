@@ -32,7 +32,9 @@ module.exports = {
           "**/netlify.toml",
           "**/*.sh",
           "**/.gitkeep",
-          "**/Vagrantfile"
+          "**/Vagrantfile",
+          "**/.obsidian/**",
+          "**/obsidian.css"
         ],
       }
     },
