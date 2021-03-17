@@ -3,25 +3,30 @@
   "version": "1.0.0",
   "description": "Publish digital garden on netlify with Gatsby",
   "dependencies": {
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
     "@pauliescanlon/gatsby-mdx-embed": "^0.0.21",
+    "@synesthesia/gatsby-theme-garden": "^0.2.2",
     "downshift": "^6.0.3",
     "flexsearch": "^0.6.32",
-    "gatsby": "^2.24.2",
+    "gatsby": "^2.25.0",
     "gatsby-plugin-local-search": "^2.0.0",
     "gatsby-plugin-manifest": "^2.4.23",
-    "gatsby-theme-garden": "^0.1.58",
+    "gatsby-plugin-mdx": "^2.1.0",
     "imagemin-pngquant": "^9.0.0",
     "patch-package": "^6.2.2",
     "postinstall-postinstall": "^2.1.0",
     "react": "^16.3.1",
-    "react-dom": "^16.3.1"
+    "react-dom": "^16.3.1",
+    "typescript": "^4.2.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "gatsby develop",
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "start": "gatsby serve",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package",
+    "clean": "rimraf ./.cache"
   },
   "repository": {
     "type": "git",
@@ -32,5 +37,8 @@
   "bugs": {
     "url": "https://github.com/synesthesia/garden-pub-3/issues"
   },
-  "homepage": "https://github.com/synesthesia/garden-pub-3#readme"
+  "homepage": "https://github.com/synesthesia/garden-pub-3#readme",
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  }
 }

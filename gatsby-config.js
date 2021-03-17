@@ -20,7 +20,7 @@ module.exports = {
        },
      },
     {
-      resolve: `gatsby-theme-garden`,
+      resolve: `@synesthesia/gatsby-theme-garden`,
       options: {
         rootNote: "/readme",
         contentPath: `${__dirname}/notes`,
