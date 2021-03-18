@@ -1657,7 +1657,7 @@
     "@babel/runtime" "^7.7.2"
     regenerator-runtime "^0.13.3"
 
-"@mdx-js/mdx@^1.6.1", "@mdx-js/mdx@^1.6.22":
+"@mdx-js/mdx@^1.6.22":
   version "1.6.22"
   resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-1.6.22.tgz#8a723157bf90e78f17dc0f27995398e6c731f1ba"
   integrity sha512-AMxuLxPz2j5/6TpF/XSdKpQP1NlG0z11dFOlq+2IP/lSgl11GY8ji6S/rgsViN/L0BDvHvUMruRb7ub+24LUYA==
@@ -1682,7 +1682,7 @@
     unist-builder "2.0.3"
     unist-util-visit "2.0.3"
 
-"@mdx-js/react@^1.6.1", "@mdx-js/react@^1.6.22":
+"@mdx-js/react@^1.6.22":
   version "1.6.22"
   resolved "https://registry.yarnpkg.com/@mdx-js/react/-/react-1.6.22.tgz#ae09b4744fddc74714ee9f9d6f17a66e77c43573"
   integrity sha512-TDoPum4SHdfPiGSAaRBw7ECyI8VaHpK8GJugbJIJuqyh6kzw9ZLJZW3HGL3NNrJGxcAixUvqROm+YuQOo5eXtg==
@@ -1833,13 +1833,13 @@
     escape-string-regexp "^2.0.0"
     lodash.deburr "^4.1.0"
 
-"@synesthesia/gatsby-theme-garden@^0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@synesthesia/gatsby-theme-garden/-/gatsby-theme-garden-0.2.3.tgz#dcf8aeb0751ab96f99ac3841897690361a2a960c"
-  integrity sha512-nWACYL0+xQgxz1gKqppRLec2A9e+79rFHtde9IEdaJiSBKhT/Xt32/idTW2ufQCqfuHsw8pQ6VqilEENvIpyzA==
+"@synesthesia/gatsby-theme-garden@^0.2.5":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@synesthesia/gatsby-theme-garden/-/gatsby-theme-garden-0.2.5.tgz#5084fb4e387eb04bb25805ed1a596dd5a216ef55"
+  integrity sha512-TKhBfZz7OT8q6xVW6KbmL01lsemB7MSlznirGprXXsInBZdtnHL5uk8wjl89I+60tXF25BXsvvkjTX+5abIHKA==
   dependencies:
-    "@mdx-js/mdx" "^1.6.1"
-    "@mdx-js/react" "^1.6.1"
+    "@mdx-js/mdx" "^1.6.22"
+    "@mdx-js/react" "^1.6.22"
     "@react-hook/window-size" "~2.0.5"
     "@tippyjs/react" "^4.0.2"
     d3 "^5.16.0"
@@ -1849,6 +1849,7 @@
     gatsby-plugin-compile-es6-packages "^2.1.0"
     gatsby-plugin-local-search "^2.0.0"
     gatsby-plugin-mdx "^1.2.12"
+    gatsby-plugin-mdx-embed "^0.0.19"
     gatsby-plugin-sharp "^2.6.14"
     gatsby-plugin-use-dark-mode "^1.1.2"
     gatsby-remark-autolink-headers "^2.3.7"
@@ -1857,6 +1858,7 @@
     gatsby-remark-images "^3.3.13"
     gatsby-source-filesystem "^2.3.8"
     gatsby-transformer-markdown-references "^0.1.5"
+    mdx-embed "^0.0.19"
     react-helmet "^6.1.0"
     react-spring "^8.0.27"
     react-stacked-pages-hook "^0.4.4"
