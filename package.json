@@ -5,7 +5,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
-    "@pauliescanlon/gatsby-mdx-embed": "^0.0.21",
+    "@pauliescanlon/gatsby-mdx-embed": "^0.0.29",
     "@synesthesia/gatsby-theme-garden": "^0.2.3",
     "downshift": "^6.0.3",
     "flexsearch": "^0.6.32",
