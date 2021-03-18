@@ -1,7 +1,7 @@
 import React from "react";
-import Reference from "gatsby-theme-garden/src/components/reference";
+import Reference from "@synesthesia/gatsby-theme-garden/src/components/reference";
 
-import "gatsby-theme-garden/src/components/references-block.css";
+import "@synesthesia/gatsby-theme-garden/src/components/references-block.css";
 
 const ReferencesBlock = ({ references }) => {
 
