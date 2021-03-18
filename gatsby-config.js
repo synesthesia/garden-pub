@@ -4,7 +4,7 @@ module.exports = {
     title: `My Digital Garden`,
   },
   plugins: [
-    `@pauliescanlon/gatsby-mdx-embed`,
+    `gatsby-plugin-mdx-embed`,
      {
        resolve: `gatsby-plugin-manifest`,
        options: {
