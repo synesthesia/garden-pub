@@ -3,4 +3,5 @@ public
 .cache
 .vagrant
 yarn-error.log
+.env.local
 
