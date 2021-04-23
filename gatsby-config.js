@@ -77,7 +77,7 @@ module.exports = {
             })),
       },
     },
-    {
+    /*{
       resolve: "gatsby-plugin-local-search",
       options: {
         name: "titles",
@@ -136,6 +136,6 @@ module.exports = {
               body: node.childMdx.rawBody,
             })),
       },
-    },
+    },*/
   ],
 };
