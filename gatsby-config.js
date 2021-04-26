@@ -37,7 +37,7 @@ module.exports = {
         ],
       }
     },
-    {
+    /*{
       resolve: "gatsby-plugin-local-search",
       options: {
         name: "paths",
@@ -76,7 +76,7 @@ module.exports = {
               ),
             })),
       },
-    },
+    },*/
     /*{
       resolve: "gatsby-plugin-local-search",
       options: {
