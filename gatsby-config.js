@@ -33,7 +33,8 @@ module.exports = {
           "**/.gitkeep",
           "**/Vagrantfile",
           "**/.obsidian/**",
-          "**/obsidian.css"
+          "**/obsidian.css",
+          "**/.foam/**"
         ],
       }
     },
