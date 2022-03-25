@@ -4,6 +4,7 @@ module.exports = {
     title: `My Digital Garden`,
   },
   plugins: [
+    'gatsby-plugin-netlify',
      {
        resolve: `gatsby-plugin-manifest`,
        options: {

@@ -18,3 +18,5 @@
 
   ignore = "git diff --quiet HEAD^ HEAD"
 
+[[plugins]]
+package = "@netlify/plugin-gatsby"
